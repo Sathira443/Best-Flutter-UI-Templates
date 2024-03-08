@@ -28,25 +28,34 @@ class _SplashViewState extends State<SplashView> {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(
-              width: MediaQuery.of(context).size.width,
-              child: Image.asset(
-                'assets/introduction_animation/introduction_image.png',
-                fit: BoxFit.cover,
+            Padding(
+              padding: const EdgeInsets.only(top: 100.0),
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width,
+                child: Image.asset(
+                  // 'assets/introduction_animation/introduction_image.png',
+                  'assets/images/health2.png',
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
             Padding(
               padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
               child: Text(
-                "Clearhead",
-                style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
+                "LifeSpark",
+                style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold, color: Colors.white70),
               ),
             ),
             Padding(
               padding: EdgeInsets.only(left: 64, right: 64),
               child: Text(
-                "Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore",
+                "Welcome to LifeSpark, your Personal Health Monitor app",
                 textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 15.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white60,  // Change this to your desired color
+                ),
               ),
             ),
             SizedBox(
@@ -69,13 +78,13 @@ class _SplashViewState extends State<SplashView> {
                   ),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(38.0),
-                    color: Color(0xff132137),
+                    color: Colors.cyanAccent,
                   ),
                   child: Text(
-                    "Let's begin",
+                    "Let's Start",
                     style: TextStyle(
                       fontSize: 18,
-                      color: Colors.white,
+                      color: Colors.black87,
                     ),
                   ),
                 ),
