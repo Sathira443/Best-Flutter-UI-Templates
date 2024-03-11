@@ -30,7 +30,12 @@ class RunningView extends StatelessWidget {
                         padding: const EdgeInsets.only(top: 16, bottom: 16),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: FitnessAppTheme.white,
+                            gradient: LinearGradient(colors: [
+                              FitnessAppTheme.dismissibleBackground,
+                              FitnessAppTheme.dark_grey
+                              // HexColor("#6F56E8")
+                            ], begin: Alignment.topLeft, end: Alignment.bottomRight),
+                            // color: FitnessAppTheme.dark_grey,
                             borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(8.0),
                                 bottomLeft: Radius.circular(8.0),
@@ -79,7 +84,7 @@ class RunningView extends StatelessWidget {
                                             fontSize: 14,
                                             letterSpacing: 0.0,
                                             color:
-                                                FitnessAppTheme.nearlyDarkBlue,
+                                                FitnessAppTheme.spacer,
                                           ),
                                         ),
                                       ),
@@ -100,7 +105,7 @@ class RunningView extends StatelessWidget {
                                         fontWeight: FontWeight.w500,
                                         fontSize: 10,
                                         letterSpacing: 0.0,
-                                        color: FitnessAppTheme.grey
+                                        color: FitnessAppTheme.nearlyWhite
                                             .withOpacity(0.5),
                                       ),
                                     ),

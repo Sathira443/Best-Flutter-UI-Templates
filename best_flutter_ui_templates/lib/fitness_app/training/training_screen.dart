@@ -214,7 +214,7 @@ class _TrainingScreenState extends State<TrainingScreen>
                                     fontWeight: FontWeight.w700,
                                     fontSize: 22 + 6 - 6 * topBarOpacity,
                                     letterSpacing: 1.2,
-                                    color: FitnessAppTheme.darkerText,
+                                    color: FitnessAppTheme.spacer,
                                   ),
                                 ),
                               ),
@@ -230,7 +230,7 @@ class _TrainingScreenState extends State<TrainingScreen>
                                 child: Center(
                                   child: Icon(
                                     Icons.keyboard_arrow_left,
-                                    color: FitnessAppTheme.grey,
+                                    color: FitnessAppTheme.nearlyBlue,
                                   ),
                                 ),
                               ),
@@ -246,7 +246,7 @@ class _TrainingScreenState extends State<TrainingScreen>
                                     padding: const EdgeInsets.only(right: 8),
                                     child: Icon(
                                       Icons.calendar_today,
-                                      color: FitnessAppTheme.grey,
+                                      color: FitnessAppTheme.nearlyBlue,
                                       size: 18,
                                     ),
                                   ),
@@ -258,7 +258,7 @@ class _TrainingScreenState extends State<TrainingScreen>
                                       fontWeight: FontWeight.normal,
                                       fontSize: 18,
                                       letterSpacing: -0.2,
-                                      color: FitnessAppTheme.darkerText,
+                                      color: FitnessAppTheme.nearlyBlue,
                                     ),
                                   ),
                                 ],
@@ -275,7 +275,7 @@ class _TrainingScreenState extends State<TrainingScreen>
                                 child: Center(
                                   child: Icon(
                                     Icons.keyboard_arrow_right,
-                                    color: FitnessAppTheme.grey,
+                                    color: FitnessAppTheme.nearlyBlue,
                                   ),
                                 ),
                               ),

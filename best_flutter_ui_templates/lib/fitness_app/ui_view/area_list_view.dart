@@ -115,7 +115,12 @@ class AreaView extends StatelessWidget {
                 0.0, 50 * (1.0 - animation!.value), 0.0),
             child: Container(
               decoration: BoxDecoration(
-                color: FitnessAppTheme.white,
+                gradient: LinearGradient(colors: [
+                  FitnessAppTheme.dismissibleBackground,
+                  FitnessAppTheme.dark_grey
+                  // HexColor("#6F56E8")
+                ], begin: Alignment.topLeft, end: Alignment.bottomRight),
+                // color: FitnessAppTheme.grey,
                 borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(8.0),
                     bottomLeft: Radius.circular(8.0),

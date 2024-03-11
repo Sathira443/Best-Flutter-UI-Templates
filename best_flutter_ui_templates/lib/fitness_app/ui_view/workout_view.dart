@@ -25,8 +25,9 @@ class WorkoutView extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                   gradient: LinearGradient(colors: [
-                    FitnessAppTheme.nearlyDarkBlue,
-                    HexColor("#6F56E8")
+                    FitnessAppTheme.dismissibleBackground,
+                    FitnessAppTheme.dark_grey
+                    // HexColor("#6F56E8")
                   ], begin: Alignment.topLeft, end: Alignment.bottomRight),
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(8.0),
@@ -84,7 +85,7 @@ class WorkoutView extends StatelessWidget {
                               padding: const EdgeInsets.only(left: 4),
                               child: Icon(
                                 Icons.timer,
-                                color: FitnessAppTheme.white,
+                                color: FitnessAppTheme.nearlyBlue,
                                 size: 16,
                               ),
                             ),
@@ -98,7 +99,7 @@ class WorkoutView extends StatelessWidget {
                                   fontWeight: FontWeight.w500,
                                   fontSize: 14,
                                   letterSpacing: 0.0,
-                                  color: FitnessAppTheme.white,
+                                  color: FitnessAppTheme.nearlyBlue,
                                 ),
                               ),
                             ),
@@ -107,7 +108,7 @@ class WorkoutView extends StatelessWidget {
                             ),
                             Container(
                               decoration: BoxDecoration(
-                                color: FitnessAppTheme.nearlyWhite,
+                                color: FitnessAppTheme.nearlyBlue,
                                 shape: BoxShape.circle,
                                 boxShadow: <BoxShadow>[
                                   BoxShadow(
